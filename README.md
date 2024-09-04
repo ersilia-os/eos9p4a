@@ -25,6 +25,8 @@ This model evaluates drug-likeness using an unsupervised learning approach, elim
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos9p4a)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9p4a.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos9p4a) (AMD64, ARM64)
 
 ## Citation
 
