@@ -12,7 +12,7 @@
     "Output Type": ["Float"],
     "Output Shape": "Single",
     "Interpretation": "Higher score indicates higher drug likeness",
-    "Tag": "Drug-likeness",
+    "Tag": ["Drug-likeness"],
     "Publication": "https://pubs.rsc.org/en/content/articlehtml/2022/sc/d1sc05248a",
     "Source Code": "https://github.com/SeonghwanSeo/DeepDL",
     "License": "GPL-3.0-or-later"
