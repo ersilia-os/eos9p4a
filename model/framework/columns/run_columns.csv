@@ -1,0 +1,2 @@
+name,type,direction,description
+druglikeness_score,float,high,Druglikeness score in the range of 0 to 100
