@@ -39,7 +39,7 @@ class DefaultModel(nn.Module) :
         If there is save_file for model, load it
         """
         if load_save_file:
-            self.load_state_dict(torch.load(load_save_file, map_location=device))
+            self.load_state_dict(torch.load(load_save_file, map_location=device, weights_only=False))
         else:
             for param in self.parameters():
                 if param.dim() == 1:
