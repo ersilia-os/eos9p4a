@@ -1,35 +1,48 @@
 {
     "Identifier": "eos9p4a",
     "Slug": "deep-dl",
-    "Status": "In progress",
+    "Status": "Ready",
     "Title": "Drug-likeness scoring based on unsupervised learning",
-    "Description": "This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules, identifying common characteristics through a recurrent neural network (RNN) language model. By representing molecules as SMILES strings, the model learns the probability distribution of known drugs and assesses new molecules based on their likelihood of appearing in this space. This method offers a robust and consistent evaluation of drug-likeness, outperforming traditional supervised models like TCC in generalization across various datasets.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Regression"
-    ],
+    "Description": "This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules, identifying common characteristics through a recurrent neural network (RNN) language model. By representing molecules as SMILES strings, the model learns the probability distribution of known drugs and assesses new molecules based on their likelihood of appearing in this space. This method offers a robust and consistent evaluation of drug-likeness, outperforming traditional supervised models like TCC in generalization across various datasets.\n",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
     "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Property calculation or prediction",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Output": [
         "Score"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
     "Interpretation": "Higher score indicates higher drug likeness",
     "Tag": [
         "Drug-likeness"
     ],
     "Publication": "https://pubs.rsc.org/en/content/articlehtml/2022/sc/d1sc05248a",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2022,
     "Source Code": "https://github.com/SeonghwanSeo/DeepDL",
     "License": "GPL-3.0-or-later",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9p4a.zip",
+    "Contributor": "miquelduranfrigola",
+    "Incorporation Date": "2024-09-04",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9p4a",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9p4a.zip",
+    "Deployment": [
+        "Online",
+        "Local"
     ]
 }
