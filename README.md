@@ -41,7 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `187`
 - **Environment Size (Mb):** `1259`
+- **Image Size (Mb):** `1458.73`
 
+**Computational Performance (seconds):**
+- 4 inputs: `35.25`
+- 20 inputs: `44.56`
+- 100 inputs: `82.51`
 
 ### References
 - **Source Code**: [https://github.com/SeonghwanSeo/DeepDL](https://github.com/SeonghwanSeo/DeepDL)
