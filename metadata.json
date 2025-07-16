@@ -5,7 +5,6 @@
     "Title": "Drug-likeness scoring based on unsupervised learning",
     "Description": "This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules, identifying common characteristics through a recurrent neural network (RNN) language model. By representing molecules as SMILES strings, the model learns the probability distribution of known drugs and assesses new molecules based on their likelihood of appearing in this space. This method offers a robust and consistent evaluation of drug-likeness, outperforming traditional supervised models like TCC in generalization across various datasets.",
     "Deployment": [
-        "Online",
         "Local"
     ],
     "Source": "Local",
