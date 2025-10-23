@@ -4,6 +4,7 @@ This model evaluates drug-likeness using an unsupervised learning approach, elim
 
 This model was incorporated on 2024-09-04.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos9p4a`
@@ -13,7 +14,7 @@ This model was incorporated on 2024-09-04.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Drug-likeness`
 
 ### Input
