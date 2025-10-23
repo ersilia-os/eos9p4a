@@ -2,8 +2,7 @@
 
 This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules, identifying common characteristics through a recurrent neural network (RNN) language model. By representing molecules as SMILES strings, the model learns the probability distribution of known drugs and assesses new molecules based on their likelihood of appearing in this space. This method offers a robust and consistent evaluation of drug-likeness, outperforming traditional supervised models like TCC in generalization across various datasets.
 
-This model was incorporated on 2024-09-04.
-
+This model was incorporated on 2024-09-04.Last packaged on 2025-10-23.
 
 ## Information
 ### Identifiers
@@ -42,11 +41,11 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `187`
 - **Environment Size (Mb):** `1283`
-- **Image Size (Mb):** `1458.66`
+- **Image Size (Mb):** `1485.13`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.22`
-- 100 inputs: `88.23`
+- 10 inputs: `28.62`
+- 100 inputs: `80.39`
 - 10000 inputs: `-1`
 
 ### References
