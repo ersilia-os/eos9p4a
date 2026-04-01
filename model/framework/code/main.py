@@ -22,10 +22,13 @@ model = RNNLM.load_model(model_path, "cpu")
 
 scores = []
 for smiles in smiles_list:
-    score = model.test(smiles)
-    scores+= [score]
+    try:
+        score = model.test(smiles)
+    except RuntimeError:
+        score = None
+    scores += [score]
 
-outputs = [float(s) for s in scores]
+outputs = [float(s) if s is not None else None for s in scores]
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
@@ -37,4 +40,4 @@ with open(output_file, "w") as f:
     writer = csv.writer(f)
     writer.writerow(["druglikeness_score"])  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(["" if o is None else o])
