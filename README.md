@@ -2,7 +2,7 @@
 
 This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules using a recurrent neural network (RNN) language model on SMILES strings, learning the probability distribution of known drugs. New molecules are scored based on their likelihood of belonging to this space, offering a robust evaluation of drug-likeness that outperforms supervised models like TCC across diverse datasets.
 
-This model was incorporated on 2024-09-04.Last packaged on 2025-10-23.
+This model was incorporated on 2024-09-04.Last packaged on 2026-04-23.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `187`
 - **Environment Size (Mb):** `1266`
-- **Image Size (Mb):** `1485.13`
+- **Image Size (Mb):** `1496.28`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.62`
-- 100 inputs: `80.39`
-- 10000 inputs: `-1`
+- 10 inputs: `32.71`
+- 100 inputs: `35.65`
+- 10000 inputs: `517.14`
 
 ### References
 - **Source Code**: [https://github.com/SeonghwanSeo/DeepDL](https://github.com/SeonghwanSeo/DeepDL)
