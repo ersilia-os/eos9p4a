@@ -24,7 +24,7 @@ scores = []
 for smiles in smiles_list:
     try:
         score = model.test(smiles)
-    except RuntimeError:
+    except Exception:
         score = None
     scores += [score]
 
