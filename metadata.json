@@ -3,7 +3,7 @@
     "Slug": "deep-dl",
     "Status": "Ready",
     "Title": "DeepDL drug-likeness scoring",
-    "Description": "Returns a drug-likeness score between 0 and 100 derived from the same unsupervised language-model approach, which learns from approved drugs without requiring examples of what a non-drug looks like. Features are extracted directly from molecular structure rather than from a fixed rule set, avoiding the sharp cut-offs of Lipinski-style filters. Because training reflects historical development choices, the score rewards familiar medicinal chemistry and may penalise legitimately novel scaffolds.",
+    "Description": "This model evaluates drug-likeness using an unsupervised learning approach, eliminating the need for labeled data and avoiding biases from incomplete negative sets. It extracts features directly from known drug molecules using a recurrent neural network (RNN) language model on SMILES strings, learning the probability distribution of known drugs. New molecules are scored based on their likelihood of belonging to this space, offering a robust evaluation of drug-likeness that outperforms supervised models like TCC across diverse datasets.",
     "Deployment": [
         "Local"
     ],
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 1,
     "Output Consistency": "Fixed",
-    "Interpretation": "Drug-likeness score from 0 to 100, higher values indicating greater resemblance to approved drugs.",
+    "Interpretation": "Higher score indicates higher drug likeness",
     "Tag": [
         "Drug-likeness"
     ],
