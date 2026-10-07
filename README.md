@@ -1,6 +1,6 @@
 # DeepDL drug-likeness scoring
 
-Returns a drug-likeness score between 0 and 100 derived from the same unsupervised language-model approach, which learns from approved drugs without requiring examples of what a non-drug looks like. Features are extracted directly from molecular structure rather than from a fixed rule set, avoiding the sharp cut-offs of Lipinski-style filters. Because training reflects historical development choices, the score rewards familiar medicinal chemistry and may penalise legitimately novel scaffolds.
+Scores drug-likeness with DeepDL, a SMILES recurrent neural network language model that Lee and colleagues at KAIST trained only on approved drugs, so no set of non-drugs has to be assembled and no arbitrary negative class biases the result. The score is 100 plus the log-likelihood of the molecule under that model, giving a ceiling of 100 and higher values for chemistry resembling marketed drugs. It behaved more consistently than two-class classifiers across diverse test sets, but very short SMILES score spuriously high and the number is not a probability of approval.
 
 This model was incorporated on 2024-09-04.Last packaged on 2026-04-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2024-09-04.Last packaged on 2026-04-23.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Drug-likeness score from 0 to 100, higher values indicating greater resemblance to approved drugs.
+- **Interpretation:** Single drug-likeness score topping out at 100, with higher values meaning stronger resemblance to approved drugs.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
