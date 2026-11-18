@@ -2,7 +2,8 @@
 
 Scores drug-likeness with DeepDL, a SMILES recurrent neural network language model that Lee and colleagues at KAIST trained only on approved drugs, so no set of non-drugs has to be assembled and no arbitrary negative class biases the result. The score is 100 plus the log-likelihood of the molecule under that model, giving a ceiling of 100 and higher values for chemistry resembling marketed drugs. It behaved more consistently than two-class classifiers across diverse test sets, but very short SMILES score spuriously high and the number is not a probability of approval.
 
-This model was incorporated on 2024-09-04.Last packaged on 2026-04-23.
+This model was incorporated on 2024-09-04.
+Last packaged on 2026-04-23.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9p4a](https://hub.docker.com/r/ersiliaos/eos9p4a)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9p4a.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9p4a.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9p4a_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9p4a_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `187`
